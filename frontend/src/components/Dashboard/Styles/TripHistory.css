@@ -1,0 +1,99 @@
+/* Trip History Container */
+.trip-history {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* border: 2px solid transparent; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .trip-history:hover {
+  transform: translateY(-5px);
+  border-color: #00ff88;
+  box-shadow: 0px 0px 12px rgba(0, 255, 136, 0.5);
+} */
+
+.trip-history h3 {
+  font-size: 22px; /* Increased font size for better visibility */
+  color: #00ff88;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600; /* Slightly bolder for emphasis */
+}
+
+/* Table Styling */
+.trip-history table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px; /* Adding space between rows */
+  margin-top: 10px;
+}
+
+.trip-history th,
+.trip-history td {
+  padding: 14px;
+  text-align: left;
+  border-radius: 6px;
+  font-size: 14px; /* Improved font size for better readability */
+  transition: background-color 0.3s ease;
+}
+
+.trip-history th {
+  background-color: #1a1a1a;
+  font-weight: 600;
+  color: #00ff88;
+  text-transform: uppercase; /* Added text transform for headings */
+  letter-spacing: 1px;
+}
+
+.trip-history td {
+  color: #e0dada;
+  background-color: #222222;
+  border-bottom: 1px solid #333333;
+}
+
+.trip-history tr:hover td {
+  background-color: #333333;
+}
+
+.trip-history tr:nth-child(even) td {
+  background-color: #1d1d1d;
+}
+
+/* Hover Effects on Rows */
+.trip-history tr:hover {
+  transform: scale(1.02);
+  background-color: #2a2a2a;
+  box-shadow: 0px 2px 8px rgba(0, 255, 136, 0.2);
+}
+
+.trip-history tr:first-child {
+  border-top: none;
+}
+
+.trip-history td:hover {
+  color: #00ff88; /* Change text color on hover */
+}
+
+/* Date Formatting - Responsive Design */
+.trip-history td {
+  word-wrap: break-word;
+}
+
+.trip-history td, .trip-history th {
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .trip-history h3 {
+    font-size: 18px;
+  }
+  .trip-history th, .trip-history td {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .trip-history table {
+    margin-top: 20px;
+  }
+}

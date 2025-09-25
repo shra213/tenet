@@ -1,0 +1,121 @@
+.total-points-card {
+  background-color: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-weight: 600;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.total-points-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+}
+
+.points-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.trophy-icon {
+  font-size: 2.6rem;
+  color: #f0b400;
+}
+
+.points {
+  font-size: 2.2rem;
+  color: #ffffff;
+}
+
+.redeem-message {
+  margin-top: 10px;
+  color: #4caf50;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.current-tier-badge {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.tier-badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.tier-badge.Bronze { background-color: #cd7f32; color: white; }
+.tier-badge.Silver { background-color: #c0c0c0; color: #333; }
+.tier-badge.Gold { background-color: #ffd700; color: #333; }
+.tier-badge.Platinum { background-color: #e5e4e2; color: #333; }
+.tier-badge.Diamond { background-color: #b9f2ff; color: #333; }
+
+.next-milestone {
+  color: #ff9800;
+  font-size: 1rem;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.points-left {
+  color: #f44336;
+  font-size: 1rem;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.recent-points {
+  border-top: 1px solid #444;
+  padding-top: 8px;
+  margin-top: 10px;
+  color: #bbbbbb;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.recent-points:hover {
+  color: #66bb6a;
+}
+
+@media (max-width: 768px) {
+  .total-points-card {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .points-content {
+    font-size: 1.6rem;
+    gap: 10px;
+  }
+
+  .trophy-icon {
+    font-size: 2.2rem;
+  }
+
+  .points {
+    font-size: 2rem;
+  }
+
+  .next-milestone,
+  .points-left,
+  .recent-points {
+    font-size: 0.9rem;
+  }
+
+  .redeem-message {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,117 @@
+.tier-card {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 350px;
+  border: 1px solid #2a2a2a;
+}
+
+.tier-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00ff88;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.tier-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  justify-content: center;
+}
+
+.tier-progress {
+  width: 80px;
+  height: 80px;
+}
+
+.tier-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.tier-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.next-tier-text {
+  font-size: 14px;
+  color: #aaa;
+  margin: 0;
+}
+
+.tier-milestone {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.milestone-icon {
+  font-size: 14px;
+}
+
+.benefits-header {
+  font-size: 16px;
+  color: #00ff88;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+
+.tier-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.tier-benefits li {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease;
+}
+
+.tier-benefits li:hover {
+  background-color: rgba(0, 255, 136, 0.1);
+  transform: translateX(3px);
+}
+
+.benefit-icon {
+  color: #00ff88;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+  .tier-content {
+    flex-direction: column;
+  }
+  
+  .tier-info {
+    margin-top: 10px;
+  }
+}
